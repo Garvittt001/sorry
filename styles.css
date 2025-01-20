@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #FF6F61, #FFB74D, #FF8C00);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  header h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+  
+  header p {
+    font-size: 1.3em;
+    color: #ffeb3b;
+  }
+  
+  .main-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.5s ease-out;
+  }
+  
+  .main-content h2 {
+    font-size: 2.5em;
+    color: #FF6F61;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+  }
+  
+  .main-content p {
+    font-size: 1.1em;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 1.8;
+  }
+  
+  .cta {
+    text-align: center;
+  }
+  
+  .cta button {
+    background-color: #FF6F61;
+    color: white;
+    font-size: 1.4em;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta button:hover {
+    background-color: #FF8C00;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
